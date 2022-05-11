@@ -15,7 +15,7 @@ class Program
 [MemoryDiagnoser]
 public class LinqPerformance
 {
-    static List<object?> list = new List<object?>(new object[] { null, null, null });
+    static List<object?> list = new List<object?>(new object?[] { null, null, null });
 
     [Benchmark]
     public int UsingCountProperty()
