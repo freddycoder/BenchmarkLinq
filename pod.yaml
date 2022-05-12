@@ -1,0 +1,19 @@
+# This is the YAML data for the pod.
+kind: Pod
+apiVersion: v1
+metadata:
+  name: benchmark-csharp-pod
+  labels:
+    app: benchmark-csharp
+spec:
+  containers:
+  - name: benchmark-csharp
+    image: erabliereapi/benchmark-csharp-dotnet
+    imagePullPolicy: Always
+    resources:
+      requests:
+        cpu: 10m
+        memory: 50Mi
+      limits:
+        memory: 250Mi
+        cpu: 100m
